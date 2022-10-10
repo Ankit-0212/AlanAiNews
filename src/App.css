@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background: url('https://images.unsplash.com/photo-1615799998603-7c6270a45196?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=404&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Poppins;
+    padding: 10px;
+}
+.grid-main{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+}
+.grid-child{
+    border: 2.5px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+}
+.news-image{
+    width: 60vw;
+    height: 60vh;
+}
+.news-title{
+    font-size:35px;
+    font-weight: 600;
+}
+.news-content{
+    font-size: 18px;
+}
+.news-autohor{
+    font-size: 14px;
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select{
+    padding: 20px;
+    margin: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.select-box{
+    margin: 10px;
+    padding: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 6px;
+    width: 120px;
+    height: 25px;
+    border: 2px solid rgb(144, 220, 250);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width:768px){
+    .news-image{
+        width: 90vw;
+        height: 70vw;
+    }
+    .news-title{
+        font-size: 25px;
+    }
+    .news-autohor{
+        font-size:10px;
+    }
 }
