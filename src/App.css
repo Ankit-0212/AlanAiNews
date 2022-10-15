@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-body{
-    background: url('https://images.unsplash.com/photo-1615799998603-7c6270a45196?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=404&q=80');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .main{
     display: flex;
     justify-content: center;
